@@ -1,14 +1,39 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
-import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import {
+  AiOutlineCalendar,
+  AiOutlineShoppingCart,
+  AiOutlineAreaChart,
+  AiOutlineBarChart,
+  AiOutlineStock,
+} from 'react-icons/ai';
+import {
+  FiShoppingBag,
+  FiEdit,
+  FiPieChart,
+  FiBarChart,
+  FiCreditCard,
+  FiStar,
+  FiShoppingCart,
+} from 'react-icons/fi';
+import {
+  BsKanban,
+  BsBarChart,
+  BsBoxSeam,
+  BsCurrencyDollar,
+  BsShield,
+  BsChatLeft,
+} from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
+import {
+  GiLouvrePyramid,
+  GiAcousticMegaphone,
+  GiGiftTrap,
+} from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
@@ -44,22 +69,18 @@ export const gridOrderStatus = (props) => (
 );
 
 export const kanbanGrid = [
-  { headerText: 'To Do',
-    keyField: 'Open',
-    allowToggle: true },
+  { headerText: 'To Do', keyField: 'Open', allowToggle: true },
 
-  { headerText: 'In Progress',
-    keyField: 'InProgress',
-    allowToggle: true },
+  { headerText: 'In Progress', keyField: 'InProgress', allowToggle: true },
 
-  { headerText: 'Testing',
+  {
+    headerText: 'Testing',
     keyField: 'Testing',
     allowToggle: true,
-    isExpanded: false },
+    isExpanded: false,
+  },
 
-  { headerText: 'Done',
-    keyField: 'Close',
-    allowToggle: true },
+  { headerText: 'Done', keyField: 'Close', allowToggle: true },
 ];
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
@@ -80,44 +101,7 @@ const gridEmployeeCountry = (props) => (
 );
 export const EditorData = () => (
   <div>
-    <h3>
-      Try React
-      React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
-
-      Online Playgrounds
-      If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Stackblitz.
-
-      If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
-
-      Add React to a Website
-      You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
-
-      Create a New React App
-      When starting a React project, a simple HTML page with script tags might still be the best option. It only takes a minute to set up!
-
-      As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. Learn how.
-
-      Learn React
-      People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.
-
-      If you prefer to learn by doing, start with our practical tutorial.
-      If you prefer to learn concepts step by step, start with our guide to main concepts.
-      Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
-
-      First Examples
-      The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.
-
-      React for Beginners
-      If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try!
-
-      React for Designers
-      If you’re coming from a design background, these resources are a great place to get started.
-
-      JavaScript Resources
-      The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
-
-      We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
-    </h3>
+    <h3>Editor for matrixs</h3>
   </div>
 );
 const customerGridImage = (props) => (
@@ -136,7 +120,10 @@ const customerGridImage = (props) => (
 
 const customerGridStatus = (props) => (
   <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
-    <p style={{ background: props.StatusBg }} className="rounded-full h-3 w-3" />
+    <p
+      style={{ background: props.StatusBg }}
+      className="rounded-full h-3 w-3"
+    />
     <p>{props.Status}</p>
   </div>
 );
@@ -157,7 +144,6 @@ export const areaPrimaryYAxis = {
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
   labelStyle: { color: 'gray' },
-
 };
 export const barPrimaryXAxis = {
   valueType: 'Category',
@@ -218,7 +204,6 @@ export const areaCustomSeries = [
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
-
   },
   {
     dataSource: areaChartData[1],
@@ -323,21 +308,21 @@ export const colorMappingData = [
 ];
 
 export const rangeColorMapping = [
-  { label: '1°C to 10°C',
-    start: '1',
-    end: '10',
-    colors: colorMappingData[1] },
+  { label: '1°C to 10°C', start: '1', end: '10', colors: colorMappingData[1] },
 
-  { label: '11°C to 20°C',
+  {
+    label: '11°C to 20°C',
     start: '11',
     end: '20',
-    colors: colorMappingData[2] },
+    colors: colorMappingData[2],
+  },
 
-  { label: '21°C to 30°C',
+  {
+    label: '21°C to 30°C',
     start: '21',
     end: '30',
-    colors: colorMappingData[3] },
-
+    colors: colorMappingData[3],
+  },
 ];
 
 export const ColorMappingPrimaryXAxis = {
@@ -393,80 +378,98 @@ export const LinePrimaryYAxis = {
 
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
-  { headerText: 'Name',
+  {
+    headerText: 'Name',
     width: '150',
     template: customerGridImage,
-    textAlign: 'Center' },
-  { field: 'ProjectName',
+    textAlign: 'Center',
+  },
+  {
+    field: 'ProjectName',
     headerText: 'Project Name',
     width: '150',
-    textAlign: 'Center' },
-  { field: 'Status',
+    textAlign: 'Center',
+  },
+  {
+    field: 'Status',
     headerText: 'Status',
     width: '130',
     format: 'yMd',
     textAlign: 'Center',
-    template: customerGridStatus },
+    template: customerGridStatus,
+  },
   {
     field: 'Weeks',
     headerText: 'Weeks',
     width: '100',
     format: 'C2',
-    textAlign: 'Center' },
-  { field: 'Budget',
+    textAlign: 'Center',
+  },
+  {
+    field: 'Budget',
     headerText: 'Budget',
     width: '100',
     format: 'yMd',
-    textAlign: 'Center' },
+    textAlign: 'Center',
+  },
 
-  { field: 'Location',
+  {
+    field: 'Location',
     headerText: 'Location',
     width: '150',
-    textAlign: 'Center' },
+    textAlign: 'Center',
+  },
 
-  { field: 'CustomerID',
+  {
+    field: 'CustomerID',
     headerText: 'Customer ID',
     width: '120',
     textAlign: 'Center',
     isPrimaryKey: true,
   },
-
 ];
 
 export const employeesGrid = [
-  { headerText: 'Employee',
+  {
+    headerText: 'Employee',
     width: '150',
     template: gridEmployeeProfile,
-    textAlign: 'Center' },
-  { field: 'Name',
-    headerText: '',
-    width: '0',
     textAlign: 'Center',
   },
-  { field: 'Title',
+  { field: 'Name', headerText: '', width: '0', textAlign: 'Center' },
+  {
+    field: 'Title',
     headerText: 'Designation',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  {
+    headerText: 'Country',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry },
+    template: gridEmployeeCountry,
+  },
 
-  { field: 'HireDate',
+  {
+    field: 'HireDate',
     headerText: 'Hire Date',
     width: '135',
     format: 'yMd',
-    textAlign: 'Center' },
+    textAlign: 'Center',
+  },
 
-  { field: 'ReportsTo',
+  {
+    field: 'ReportsTo',
     headerText: 'Reports To',
     width: '120',
-    textAlign: 'Center' },
-  { field: 'EmployeeID',
+    textAlign: 'Center',
+  },
+  {
+    field: 'EmployeeID',
     headerText: 'Employee ID',
     width: '125',
-    textAlign: 'Center' },
+    textAlign: 'Center',
+  },
 ];
 
 export const links = [
@@ -474,7 +477,7 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
+        name: 'Dashboard',
         icon: <FiShoppingBag />,
       },
     ],
@@ -488,12 +491,12 @@ export const links = [
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: 'employees',
-        icon: <IoMdContacts />,
-      },
-      {
         name: 'customers',
         icon: <RiContactsLine />,
+      },
+      {
+        name: 'employees',
+        icon: <IoMdContacts />,
       },
     ],
   },
@@ -550,9 +553,21 @@ export const links = [
         name: 'pyramid',
         icon: <GiLouvrePyramid />,
       },
+      // {
+      //   name: 'stacked',
+      //   icon: <AiOutlineBarChart />,
+      // },
+    ],
+  },
+  {
+    links: [
       {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
+        name: 'Contact Support',
+        icon: <GiAcousticMegaphone />,
+      },
+      {
+        name: 'Free Gifts Awaits You!',
+        icon: <GiGiftTrap />,
       },
     ],
   },
@@ -560,22 +575,19 @@ export const links = [
 
 export const cartData = [
   {
-    image:
-      product5,
+    image: product5,
     name: 'butterscotch ice-cream',
     category: 'Milk product',
     price: '$250',
   },
   {
-    image:
-      product6,
+    image: product6,
     name: 'Supreme fresh tomato',
     category: 'Vegetable Item',
     price: '$450',
   },
   {
-    image:
-      product7,
+    image: product7,
     name: 'Red color candy',
     category: 'Food Item',
     price: '$190',
@@ -584,29 +596,25 @@ export const cartData = [
 
 export const chatData = [
   {
-    image:
-      avatar2,
+    image: avatar2,
     message: 'Roman Joined the Team!',
     desc: 'Congratulate him',
     time: '9:08 AM',
   },
   {
-    image:
-      avatar3,
+    image: avatar3,
     message: 'New message received',
     desc: 'Salma sent you new message',
     time: '11:56 AM',
   },
   {
-    image:
-      avatar4,
+    image: avatar4,
     message: 'New Payment received',
     desc: 'Check your earnings',
     time: '4:39 AM',
   },
   {
-    image:
-      avatar,
+    image: avatar,
     message: 'Jolly completed tasks',
     desc: 'Assign her new tasks',
     time: '1:12 AM',
@@ -733,8 +741,7 @@ export const weeklyStats = [
 
 export const productsPerformance = [
   {
-    image:
-      product5,
+    image: product5,
     title: 'Is it good butterscotch ice-cream?',
     desc: 'Ice-Cream, Milk, Powder',
     rating: 'Good',
@@ -742,8 +749,7 @@ export const productsPerformance = [
     earningAmount: '$546,000',
   },
   {
-    image:
-      product6,
+    image: product6,
     title: 'Supreme fresh tomato available',
     desc: 'Market, Mall',
     rating: 'Excellent',
@@ -751,8 +757,7 @@ export const productsPerformance = [
     earningAmount: '$780,000',
   },
   {
-    image:
-      product7,
+    image: product7,
     title: 'Red color candy from Gucci',
     desc: 'Chocolate, Yummy',
     rating: 'Average',
@@ -760,8 +765,7 @@ export const productsPerformance = [
     earningAmount: '$457,000',
   },
   {
-    image:
-      product4,
+    image: product4,
     title: 'Stylish night lamp for night',
     desc: 'Electric, Wire, Current',
     rating: 'Poor',
@@ -797,24 +801,19 @@ export const medicalproBranding = {
   ],
   leaders: [
     {
-      image:
-        avatar2,
+      image: avatar2,
     },
     {
-      image:
-        avatar3,
+      image: avatar3,
     },
     {
-      image:
-        avatar2,
+      image: avatar2,
     },
     {
-      image:
-        avatar4,
+      image: avatar4,
     },
     {
-      image:
-        avatar,
+      image: avatar,
     },
   ],
 };
@@ -884,7 +883,8 @@ export const ordersGrid = [
     editType: 'dropdownedit',
     textAlign: 'Center',
   },
-  { field: 'CustomerName',
+  {
+    field: 'CustomerName',
     headerText: 'Customer Name',
     width: '150',
     textAlign: 'Center',
@@ -924,8 +924,7 @@ export const customersData = [
     CustomerID: 1001,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Active',
     StatusBg: '#8BE78B',
@@ -940,8 +939,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -955,8 +953,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -969,8 +966,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -983,8 +979,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Cancel',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -994,8 +989,7 @@ export const customersData = [
     CustomerID: 1006,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Active',
     StatusBg: '#8BE78B',
@@ -1010,8 +1004,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1025,8 +1018,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1039,8 +1031,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1053,8 +1044,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Cancel',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1064,8 +1054,7 @@ export const customersData = [
     CustomerID: 1011,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Active',
     StatusBg: '#8BE78B',
@@ -1080,8 +1069,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1095,8 +1083,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1109,8 +1096,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1123,8 +1109,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Cancel',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1134,8 +1119,7 @@ export const customersData = [
     CustomerID: 1016,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Active',
     StatusBg: '#8BE78B',
@@ -1150,8 +1134,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1165,8 +1148,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1179,8 +1161,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1193,8 +1174,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Cancel',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1204,8 +1184,7 @@ export const customersData = [
     CustomerID: 1021,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Active',
     StatusBg: '#8BE78B',
@@ -1220,8 +1199,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1235,8 +1213,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1249,8 +1226,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1263,8 +1239,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Cancel',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1274,8 +1249,7 @@ export const customersData = [
     CustomerID: 1026,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Active',
     StatusBg: '#8BE78B',
@@ -1290,8 +1264,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1305,8 +1278,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1319,8 +1291,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1333,8 +1304,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Cancel',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1344,8 +1314,7 @@ export const customersData = [
     CustomerID: 1031,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Active',
     StatusBg: '#8BE78B',
@@ -1360,8 +1329,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1375,8 +1343,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1389,8 +1356,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1403,8 +1369,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Cancel',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1414,8 +1379,7 @@ export const customersData = [
     CustomerID: 1036,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Active',
     StatusBg: '#8BE78B',
@@ -1430,8 +1394,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1445,8 +1408,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Pending',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1458,8 +1420,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Completed',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1471,14 +1432,12 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Cancel',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
     Location: 'USA',
   },
-
 ];
 
 export const employeesData = [
@@ -1489,8 +1448,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 2,
@@ -1499,8 +1457,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1509,8 +1466,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1519,8 +1475,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1529,8 +1484,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -1539,8 +1493,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -1549,8 +1502,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 1,
@@ -1559,9 +1511,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
-
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 2,
@@ -1570,8 +1520,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1580,8 +1529,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1590,8 +1538,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1600,8 +1547,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -1610,8 +1556,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -1620,8 +1565,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 1,
@@ -1630,8 +1574,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 2,
@@ -1640,8 +1583,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1650,8 +1592,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1660,8 +1601,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1670,8 +1610,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -1680,8 +1619,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -1690,8 +1628,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 1,
@@ -1700,9 +1637,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
-
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 2,
@@ -1711,8 +1646,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1721,8 +1655,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1731,8 +1664,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1741,8 +1673,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -1751,8 +1682,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -1761,8 +1691,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 1,
@@ -1771,9 +1700,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
-
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 2,
@@ -1782,8 +1709,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1792,8 +1718,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1802,8 +1727,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1812,8 +1736,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -1822,8 +1745,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -1832,8 +1754,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 1,
@@ -1842,9 +1763,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
-
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 2,
@@ -1853,8 +1772,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1863,8 +1781,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1873,8 +1790,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1883,8 +1799,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -1893,8 +1808,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -1903,8 +1817,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 1,
@@ -1913,9 +1826,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
-
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 2,
@@ -1924,8 +1835,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1934,8 +1844,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1944,8 +1853,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1954,8 +1862,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -1964,8 +1871,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -1974,8 +1880,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 1,
@@ -1984,9 +1889,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
-
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 2,
@@ -1995,8 +1898,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -2005,8 +1907,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -2015,8 +1916,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -2025,8 +1925,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -2035,8 +1934,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -2045,8 +1943,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 1,
@@ -2055,9 +1952,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar2,
-
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 2,
@@ -2066,8 +1961,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -2076,8 +1970,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -2086,8 +1979,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -2096,8 +1988,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 4,
@@ -2106,8 +1997,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 5,
@@ -2116,8 +2006,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
 ];
 
@@ -2131,8 +2020,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -2142,8 +2030,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -2153,8 +2040,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -2164,8 +2050,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -2175,8 +2060,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-    product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -2186,8 +2070,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -2197,8 +2080,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -2208,8 +2090,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -2275,8 +2156,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -2286,8 +2166,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -2297,8 +2176,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -2308,8 +2186,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -2319,8 +2196,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-      product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -2330,8 +2206,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -2341,8 +2216,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -2352,8 +2226,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -2419,8 +2292,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -2430,8 +2302,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -2441,8 +2312,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -2452,8 +2322,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -2463,8 +2332,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-      product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -2474,8 +2342,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -2485,8 +2352,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -2496,8 +2362,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -2563,8 +2428,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -2574,8 +2438,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -2585,8 +2448,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -2596,8 +2458,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -2607,8 +2468,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-      product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -2618,8 +2478,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -2629,8 +2488,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -2640,8 +2498,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -2707,8 +2564,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -2718,8 +2574,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -2729,8 +2584,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -2740,8 +2594,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -2751,8 +2604,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-      product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -2762,8 +2614,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -2773,8 +2624,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -2784,8 +2634,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -3077,7 +2926,8 @@ export const dropdownData = [
   {
     Id: '2',
     Time: 'April 2021',
-  }, {
+  },
+  {
     Id: '3',
     Time: 'May 2021',
   },
@@ -3088,34 +2938,38 @@ export const SparklineAreaData = [
   { x: 3, yval: 8 },
   { x: 4, yval: 5 },
   { x: 5, yval: 10 },
-
 ];
 
 export const lineCustomSeries = [
-  { dataSource: lineChartData[0],
+  {
+    dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
     name: 'Germany',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    type: 'Line',
+  },
 
-  { dataSource: lineChartData[1],
+  {
+    dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
     name: 'England',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    type: 'Line',
+  },
 
-  { dataSource: lineChartData[2],
+  {
+    dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
     name: 'India',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
-
+    type: 'Line',
+  },
 ];
 
 export const pieChartData = [
@@ -3176,25 +3030,23 @@ export const stackedChartData = [
 ];
 
 export const stackedCustomSeries = [
-
-  { dataSource: stackedChartData[0],
+  {
+    dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
     name: 'Budget',
     type: 'StackingColumn',
     background: 'blue',
-
   },
 
-  { dataSource: stackedChartData[1],
+  {
+    dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
     name: 'Expense',
     type: 'StackingColumn',
     background: 'red',
-
   },
-
 ];
 
 export const stackedPrimaryXAxis = {
