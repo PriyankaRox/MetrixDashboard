@@ -1,6 +1,7 @@
-### Metrix Dashboard Documentation
+# Metrix Dashboard Documentation
 
-Introduction
+## Introduction
+
 The Metrix Dashboard is a modern and responsive dashboard built using React, Tailwind CSS, and Syncfusion. This documentation provides an overview of the project structure, setup instructions, and a brief explanation of the key components and their functionalities.
 
 ### Table of Contents
@@ -19,6 +20,7 @@ Styling
 Syncfusion Integration
 Project Structure
 
+```
 metrix-dashboard/
 ├── public/
 │ ├── index.html
@@ -61,8 +63,10 @@ metrix-dashboard/
 │ └── ...
 ├── package.json
 └── ...
+```
 
-Installation
+# Installation
+
 To get started with the Metrix Dashboard, follow these steps:
 
 1.Clone the repository:
@@ -119,7 +123,7 @@ Settings.jsx - Allows users to configure their preferences and account settings.
 Styling
 The application uses Tailwind CSS for styling. Custom styles are defined in the src/scss/volt.scss file. Tailwind's utility classes are used throughout the components to ensure a consistent and responsive design.
 
-### Syncfusion Integration
+# Syncfusion Integration
 
 Syncfusion components are used to create interactive and visually appealing charts and graphs.
 
@@ -128,6 +132,8 @@ Ensure that Syncfusion components are installed:
 npm install @syncfusion/ej2-react-charts
 
 Usage
+
+```
 Import and use Syncfusion components in your React components. For example:
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective } from '@syncfusion/ej2-react-charts';
 
@@ -140,3 +146,4 @@ const SalesChart = () => (
 );
 
 export default SalesChart;
+```
